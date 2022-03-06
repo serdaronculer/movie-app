@@ -1,0 +1,139 @@
+
+
+.sl-nav {
+    display: flex;
+    color: #fff;
+    margin-left: 30px;
+    align-items: center;
+    gap: 10px;
+}
+.sl-nav div, .sl-nav ul{
+    margin-top: 10px;
+}
+.sl-nav > div{
+    padding-bottom: 10px;
+}
+
+.sl-nav ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.sl-nav li {
+    cursor: pointer;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.sl-nav li ul {
+    display: none;
+}
+
+.sl-nav li:hover ul, .sl-nav li ul:hover
+{
+    position: absolute;
+    top: 39px;
+    right: -15px;
+    display: block;
+    background: #19222E;
+    width: 120px;
+    padding-top: 0px;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sl-nav li:hover .triangle {
+    position: absolute;
+    top: 15px;
+    right: -10px;
+    z-index: 2;
+    height: 14px;
+    overflow: hidden;
+    width: 30px;
+    background: transparent;
+}
+
+.sl-nav li:hover .triangle:after {
+    content: '';
+    display: block;
+    z-index: 2;
+    width: 15px;
+    transform: rotate(45deg) translateY(0px) translatex(10px);
+    height: 15px;
+    background: #19222E;
+    border-radius: 2px 0px 0px 0px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sl-nav li ul li {
+    position: relative;
+    text-align: left;
+    background: transparent;
+    padding: 15px 15px;
+    padding-bottom: 0;
+    z-index: 2;
+    font-size: 15px;
+    color: #fff;
+}
+
+.sl-nav li ul li:last-of-type {
+    padding-bottom: 15px;
+}
+
+
+
+.sl-nav li ul li span.active {
+    color: #146c78;
+}
+
+.sl-flag {
+    display: inline-block;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+    width: 15px;
+    height: 15px;
+    background: #aaa;
+    border-radius: 50%;
+    position: relative;
+    top: 2px;
+    overflow: hidden;
+}
+.fa-angle-down{
+    margin-left: 4px;
+}
+
+@media only screen and (max-width: 400px) {
+
+    .sl-nav > div, .sl-nav > ul li{
+        font-size: 12px;
+    }
+    .sl-nav {
+        display: flex;
+        color: #fff;
+        margin-left: 30px;
+        align-items: center;
+        gap: 2px;
+    }
+    .sl-nav li:hover ul, .sl-nav li ul:hover
+    {
+        position: absolute;
+        top: 39px;
+        right: -15px;
+        width: 80px;
+        text-align: center;
+    }
+    .sl-nav li ul li {
+        position: relative;
+        text-align: center;
+        background: transparent;
+        z-index: 2;
+        font-size: 11px;
+        color: #fff;
+    }
+}
