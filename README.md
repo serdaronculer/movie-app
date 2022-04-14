@@ -1,6 +1,19 @@
-# movie-app
+# Movie-App
+
+## Note
+
+**The project is not completed. Open to requests.**
+
+[Click here](https://www.themoviedb.org/?language=tr) for the API source used.
+
+
+
+![](GIF/Animation.gif)
+
+
 
 ## Project setup
+
 ```
 npm install
 ```
